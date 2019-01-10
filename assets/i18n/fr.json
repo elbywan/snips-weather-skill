@@ -1,0 +1,117 @@
+{
+    "error": {
+        "mqtt": "Désolé, une erreur s'est produite lors de la communication avec la plateforme Snips",
+        "config": "Désolé, une erreur s'est produite avec votre fichier de configuration.",
+        "locale": "Désolé, une erreur s'est produite avec vos paramètres de localisation.",
+        "places": "Désolé, une erreur s'est produite avec vos données géographiques.",
+        "defaultLocation": "Désolé, votre emplacement par défaut n'a pas été retrouvé",
+        "slots": "Désolé, une erreur s'est produite avec vos paramètres de lieu",
+        "place": "Désolé, le lieu demandé n'a pas été retrouvé",
+        "country": "Désolé, le pays demandé n'a pas été retrouvé",
+        "abortedByUser": "Désolé une erreur s'est produite.",
+        "intentNotRecognized": "Désolé, je n'ai pas compris votre requête.",
+        "timeout": "Désolé, la durée maximale de votre session est dépassée.",
+        "intersection": "Désolé, la période demandée doit être comprise entre aujourd'hui et dans 5 jours au plus tard.",
+        "APIResponse": "Désolé, une erreur s'est produite avec le service de météo.",
+        "APIRequest": "Désolé, le service de météo est injoignable.",
+        "API": "Désolé, une erreur s'est durant la recherche de vos données.",
+        "localisation": "Désolé, cette langue n'est pas supportée.",
+        "unspecific": "Oups, quelque chose s'est mal passé."
+    },
+    "forecast": {
+        "weather": {
+            "prediction": {
+                "quantifier": [
+                    "il fera {{- weather }}",
+                    "le temps sera {{- weather }}",
+                    "il est prévu qu'il fasse {{- weather }}",
+                    "il fera un temps {{- weather }}",
+                    "les prévisions sont à un temps {{- weather }}"
+                ],
+                "qualifier": [
+                    "il fera {{- weather }}",
+                    "le temps sera {{- weather }}",
+                    "il est prévu qu'il fasse {{- weather }}",
+                    "il fera un temps {{- weather }}",
+                    "les prévisions sont à un temps {{- weather }}"
+                ]
+            },
+            "temperatures": {
+                "range": [
+                    "avec des températures comprises entre {{ minTemp }} et {{ maxTemp }} degrés",
+                    "et les températures seront comprises entre {{ minTemp }} et {{ maxTemp }} degrés",
+                    "avec des températures entre {{ minTemp }} to {{ maxTemp }} degrés",
+                    "et il fera entre {{ minTemp }} et {{ maxTemp }} degrés"
+                ],
+                "exact": [
+                    "et la température sera de {{ temperature }} degrés",
+                    "et il fera {{ temperature }} degrés",
+                    "avec une température de {{ temperature }} degrés"
+                ]
+            },
+            "day": "{{- time }} {{- predictions }} {{- temperatures }}.",
+            "day_place": "In {{ place }} {{- time }} {{- predictions }} {{- temperatures }}."
+        },
+        "temperatures": {
+            "temperatures": {
+                "range": [
+                    "il fera entre {{ minTemp }} et {{ maxTemp }} degrés",
+                    "les températures seront comprises entre {{ minTemp }} et {{ maxTemp }} degrés",
+                    "il y aura une température minimale de {{ minTemp }} et une température maximale de {{ maxTemp }} degrés"
+                ],
+                "exact": [
+                    "la température sera de {{ temperature }} degrés",
+                    "il fera {{ temperature }} degrés",
+                    "on attend une température de {{ temperature }} degrés"
+                ]
+            },
+            "day": "{{- time }} {{- temperatures }}.",
+            "day_place": "{{ place }} {{- time }} {{- temperatures }}."
+        }
+    },
+    "partOfDay": {
+        "morning": "dans la matinée",
+        "noon": "le midi",
+        "afternoon": "l'après midi",
+        "evening": "dans la soirée",
+        "night": "la nuit"
+    },
+    "days": {
+        "monday": "lundi",
+        "tuesday": "mardi",
+        "wednesday": "mercredi",
+        "thursday": "jeudi",
+        "friday": "vendredi",
+        "saturday": "samedi",
+        "sunday": "dimanche",
+        "yesterday": "hier",
+        "today": "aujoud'hui",
+        "tomorrow": "demain"
+    },
+    "quantifier": {
+        "mostly": "principalement",
+        "partly": "partiellement"
+    },
+    "qualifier": {
+        "light": "légèrement",
+        "moderate": "modérément",
+        "heavy": "fortement"
+    },
+    "weatherTypes": {
+        "quantifier": {
+            "clouds": "nuageux",
+            "rain": "pluvieux",
+            "sun": "ensoleillé",
+            "snow": "neigeux"
+        },
+        "qualifier": {
+            "clouds": "nuageux",
+            "rain": "pluvieux",
+            "sun": "ensoleillé",
+            "snow": "neigeux"
+        }
+    },
+    "joins": {
+        "andSomething": "et {{- something }}"
+    }
+}

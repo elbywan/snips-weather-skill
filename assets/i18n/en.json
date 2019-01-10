@@ -1,0 +1,115 @@
+{
+    "error": {
+        "mqtt": "Sorry, there was a communication error with the Snips platform",
+        "config": "Sorry, there was an error with your config file.",
+        "locale": "Sorry, there was an error with your language settings.",
+        "places": "Sorry, there was an error with your location data.",
+        "defaultLocation": "Sorry, your default location was not found",
+        "slots": "Sorry, there was an error with your location specifications",
+        "place": "Sorry, the location you asked was not found.",
+        "country": "Sorry, the country you asked was not found.",
+        "abortedByUser": "Sorry, there was an error.",
+        "intentNotRecognized": "Sorry, I did not understand your request.",
+        "timeout": "Sorry, your session timed out.",
+        "intersection": "Sorry, the time period should be within 5 days from now.",
+        "APIResponse": "Sorry, there was an issue with the service provider.",
+        "APIRequest": "Sorry, the service provider is unreachable.",
+        "API": "Sorry, there was an issue with your data retrieving.",
+        "localisation": "Sorry, this localisation is not supported.",
+        "unspecific": "Oops, something went wrong."
+    },
+    "forecast": {
+        "weather": {
+            "prediction": {
+                "quantifier": [
+                    "it is expected to be {{- weather }}",
+                    "it is going to be {{- weather }}",
+                    "it will be {{- weather }}",
+                    "the weather will be {{- weather }}",
+                    "it's predicted to be {{- weather }}"
+                ],
+                "qualifier": [
+                    "we are expecting {{- weather }}",
+                    "there is going to be {{- weather }}",
+                    "there will be {{- weather }}"
+                ]
+            },
+            "temperatures": {
+                "range": [
+                    "with a high of {{ minTemp }} and a low of {{ maxTemp }} degrees",
+                    "with temperatures ranging between {{ minTemp }} and {{ maxTemp }} degrees",
+                    "with temperatures between {{ minTemp }} to {{ maxTemp }} degrees",
+                    "and temperatures will be ranging between {{ minTemp }} and {{ maxTemp }} degrees"
+                ],
+                "exact": [
+                    "and the temperature will be {{ temperature }} degrees",
+                    "and it will be {{ temperature }} degrees",
+                    "with a temperature of {{ temperature }} degrees"
+                ]
+            },
+            "day": "{{- time }} {{- predictions }} {{- temperatures }}.",
+            "day_place": "In {{ place }} {{- time }} {{- predictions }} {{- temperatures }}."
+        },
+        "temperatures": {
+            "temperatures": {
+                "range": [
+                    "there will be a high of {{ minTemp }} and a low of {{ maxTemp }} degrees",
+                    "the temperatures will be ranging between {{ minTemp }} and {{ maxTemp }} degrees",
+                    "the temperatures will range between {{ minTemp }} to {{ maxTemp }} degrees"
+                ],
+                "exact": [
+                    "the temperature will be {{ temperature }} degrees",
+                    "it will be {{ temperature }} degrees",
+                    "it is expected to be {{ temperature }} degrees"
+                ]
+            },
+            "day": "{{- time }} {{- temperatures }}.",
+            "day_place": "In {{ place }} {{- time }} {{- temperatures }}."
+        }
+    },
+    "partOfDay": {
+        "morning": "in the morning",
+        "noon": "at noon",
+        "afternoon": "in the afternoon",
+        "evening": "in the evening",
+        "night": "at night"
+    },
+    "days": {
+        "monday": "monday",
+        "tuesday": "tuesday",
+        "wednesday": "wednesday",
+        "thursday": "thursday",
+        "friday": "friday",
+        "saturday": "saturday",
+        "sunday": "sunday",
+        "yesterday": "yesterday",
+        "today": "today",
+        "tomorrow": "tomorrow"
+    },
+    "quantifier": {
+        "mostly": "mostly",
+        "partly": "partly"
+    },
+    "qualifier": {
+        "light": "light",
+        "moderate": "moderate",
+        "heavy": "heavy"
+    },
+    "weatherTypes": {
+        "quantifier": {
+            "clouds": "cloudy",
+            "rain": "rainy",
+            "sun": "sunny",
+            "snow": "snowy"
+        },
+        "qualifier": {
+            "clouds": "clouds",
+            "rain": "rain",
+            "sun": "sun",
+            "snow": "snowfall"
+        }
+    },
+    "joins": {
+        "andSomething": "and {{- something }}"
+    }
+}
