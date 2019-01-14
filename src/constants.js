@@ -26,5 +26,23 @@ module.exports = {
         rain: 0.1,
         snow: 0.05,
         cloudiness: 25
+    },
+    CONDITIONS_MAPPINGS: {
+        fr: {
+            froid: 'cold',
+            chaud: 'warm',
+            neige: 'snow',
+            pluie: 'rain'
+        },
+        en: {
+            cold: 'cold',
+            warm: 'warm',
+            snow: 'snow',
+            rain: 'rain'
+        }
+    },
+    TEMPERATURE_TRESHOLDS: {
+        cold: 10,
+        warm: 20
     }
 }

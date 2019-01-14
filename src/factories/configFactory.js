@@ -2,8 +2,8 @@ const fs = require('fs')
 const path = require('path')
 const ini = require('ini')
 const { camelizeKeys } = require('../utils/camelize')
+const logger = require('../utils/logger')
 const { SUPPORTED_LOCALES, DEFAULT_LOCALE } = require('../constants')
-const { logger } = require('../utils')
 
 let config = null
 

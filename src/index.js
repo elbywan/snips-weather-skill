@@ -23,10 +23,7 @@ withHermes(async (hermes, done) => {
             },
             {
                 intent: 'davidsnips:WeatherConditionRequest',
-                action: async function(msg, flow) {
-                    /* Not supported yet */
-                    flow.end()
-                }
+                action: handlers.weatherCondition
             }
         ])
     } catch (error) {

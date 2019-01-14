@@ -65,6 +65,58 @@
             },
             "day": "{{- time }} {{- temperatures }}.",
             "day_place": "In {{ place }} {{- time }} {{- temperatures }}."
+        },
+        "conditional": {
+            "yes": {
+                "rain": [
+                    "Yes, it is expected to rain in {{ place }}.",
+                    "Yes, it is going to be rainy in {{ place }}.",
+                    "Yes, the weather will be rainy in {{ place }}.",
+                    "Yes, rain in expected in {{ place }}."
+                ],
+                "snow": [
+                    "Yes, it is expected to snow in {{ place }}.",
+                    "Yes, it is going to be snowy in {{ place }}.",
+                    "Yes, the weather will be snowy in {{ place }}.",
+                    "Yes, snow in expected in {{ place }}."
+                ],
+                "cold": [
+                    "Yes, it is expected to be cold in {{ place }}.",
+                    "Yes, it is going to be cold in {{ place }}.",
+                    "Yes, the temperature will be low in {{ place }}.",
+                    "Yes, the temperature is going to be low in {{ place }}."
+                ],
+                "warm": [
+                    "Yes, it is expected to be warm in {{ place }}.",
+                    "Yes, it is going to be warm in {{ place }}.",
+                    "Yes, the temperature will be high in {{ place }}.",
+                    "Yes, the temperature is going to be high in {{ place }}."
+                ]
+            },
+            "no": {
+                "rain": [
+                    "No, it is not expected to rain in {{ place }}.",
+                    "No, it is not going to be rainy in {{ place }}.",
+                    "No, the weather will not be rainy in {{ place }}.",
+                    "No, rain is not expected in {{ place }}."
+                ],
+                "snow": [
+                    "No, it is not expected to snow in {{ place }}.",
+                    "No, it is not going to be snowy in {{ place }}.",
+                    "No, the weather will not be snowy in {{ place }}.",
+                    "No, snow is not expected in {{ place }}."
+                ],
+                "cold": [
+                    "No, it is not expected to be cold in {{ place }}.",
+                    "No, it is not going to be cold in {{ place }}.",
+                    "No, the weather will not be cold in {{ place }}."
+                ],
+                "warm": [
+                    "No, it is not expected to be warm in {{ place }}.",
+                    "No, it is not going to be warm in {{ place }}.",
+                    "No, the weather will not be warm in {{ place }}."
+                ]
+            }
         }
     },
     "partOfDay": {

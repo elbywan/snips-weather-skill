@@ -67,6 +67,71 @@
             },
             "day": "{{- time }} {{- temperatures }}.",
             "day_place": "{{ place }} {{- time }} {{- temperatures }}."
+        },
+        "conditional": {
+            "yes": {
+                "rain": [
+                    "Oui, il va pleuvoir sur {{ place }}.",
+                    "Oui, il est prévu qu'il pleuve sur {{ place }}.",
+                    "Oui, sur {{ place }} le temps sera pluvieux.",
+                    "Effectivement, il y aura des averses sur {{ place }}.",
+                    "Il y aura bien de la pluie sur {{ place }}.",
+                    "Sur {{ place }}, de la pluie est prévue."
+                ],
+                "snow": [
+                    "Oui, il va neiger sur {{ place }}.",
+                    "Oui, il est prévu qu'il neige sur {{ place }}.",
+                    "Oui, sur {{ place }} le temps sera neigeux.",
+                    "Effectivement, il y aura de la neige sur {{ place }}.",
+                    "Il y aura bien de la neige sur {{ place }}.",
+                    "Sur {{ place }}, de la neige est prévue."
+                ],
+                "cold": [
+                    "Oui, il va faire froid sur {{ place }}.",
+                    "Oui, il est prévu qu'il fasse froid sur {{ place }}.",
+                    "Oui, sur {{ place }} les températures seront fraîches.",
+                    "Effectivement, il y aura des températures relativement basses sur {{ place }}.",
+                    "Oui, sur {{ place }} il fera froid.",
+                    "Sur {{ place }}, on attend des températures relativement basses."
+                ],
+                "warm": [
+                    "Oui, il va faire chaud sur {{ place }}.",
+                    "Oui, il est prévu qu'il fasse chaud sur {{ place }}.",
+                    "Oui, sur {{ place }} les températures seront hautes.",
+                    "Effectivement, il y aura des températures relativement hautes sur {{ place }}.",
+                    "Oui, sur {{ place }} il fera chaud.",
+                    "Sur {{ place }}, on attend des températures relativement hautes."
+                ]
+            },
+            "no": {
+                "rain": [
+                    "Non, il ne pleuvra pas sur {{ place }}.",
+                    "Non, il n'est pas prévu qu'il pleuve sur {{ place }}.",
+                    "Non, sur {{ place }} le temps ne sera pas pluvieux.",
+                    "Non, il n'y aura pas d'averses sur {{ place }}.",
+                    "Non, il n'y aura pas de pluie sur {{ place }}.",
+                    "Sur {{ place }}, aucune pluie n'est prévue."
+                ],
+                "snow": [
+                    "Non, il ne neigera pas sur {{ place }}.",
+                    "Non, il n'est pas prévu qu'il neige sur {{ place }}.",
+                    "Non, sur {{ place }} le temps ne sera pas neigeux.",
+                    "Non, il n'y aura pas de neige sur {{ place }}.",
+                    "Sur {{ place }}, aucune chute de neige n'est prévue."
+                ],
+                "cold": [
+                    "Non, il ne fera pas froid sur {{ place }}.",
+                    "Non, il n'est pas prévu qu'il fasse froid sur {{ place }}.",
+                    "Non, sur {{ place }} le temps ne sera pas froid.",
+                    "Sur {{ place }}, il n'est pas prévu qu'il fasse froid."
+                ],
+                "warm": [
+                    "Non, il ne fera pas chaud sur {{ place }}.",
+                    "Non, il n'est pas prévu qu'il fasse chaud sur {{ place }}.",
+                    "Non, sur {{ place }} le temps ne sera pas chaud.",
+                    "Sur {{ place }}, il n'est pas prévu qu'il fasse chaud."
+                ]
+            }
         }
     },
     "partOfDay": {

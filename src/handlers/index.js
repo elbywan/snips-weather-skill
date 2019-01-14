@@ -22,4 +22,5 @@ const handlerWrapper = handler => (
 module.exports = {
     weatherForecast: handlerWrapper(require('./weatherForecast')),
     temperatureForecast: handlerWrapper(require('./temperatureForecast')),
+    weatherCondition: handlerWrapper(require('./weatherCondition'))
 }

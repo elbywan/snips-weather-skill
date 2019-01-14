@@ -86,8 +86,8 @@ module.exports = {
                 time,
                 predictions,
                 temperatures,
-                place: firstDay ? place : null,
-                context: firstDay ? 'place' : null
+                place: firstDay && place ? place : null,
+                context: firstDay && place ? 'place' : null
             }))
 
             firstDay = false
@@ -130,8 +130,8 @@ module.exports = {
             const daySentence = trimStart(i18n('forecast.temperatures.day', {
                 time,
                 temperatures,
-                place: firstDay ? place : null,
-                context: firstDay ? 'place' : null
+                place: firstDay && place ? place : null,
+                context: firstDay && place ? 'place' : null
             }))
 
             firstDay = false
@@ -139,5 +139,9 @@ module.exports = {
             speech += daySentence.charAt(0).toUpperCase() + daySentence.slice(1) + '\n'
             return speech
         }, '')
+    },
+    conditionToSpeech (name, condition, place) {
+        const randomTranslation = module.exports.randomTranslation
+        return randomTranslation(`forecast.conditional.${condition}.${name}`, { place }) + '\n'
     }
 }
