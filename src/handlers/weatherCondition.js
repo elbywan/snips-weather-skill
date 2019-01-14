@@ -1,7 +1,8 @@
 const {
     translation,
     logger,
-    message
+    message,
+    weather
 } = require('../utils')
 const { configFactory } = require('../factories')
 const {
@@ -25,11 +26,17 @@ module.exports = async function (msg, flow) {
 
     const {
         place,
+        aggregatedForecastData,
         formattedForecastData
     } = await commonHandler(msg, { mergeFormattedData: true })
 
     let speech = ''
     if(conditionName === 'cold' || conditionName === 'warm') {
+        const formattedTemperatureData = weather.formatForecast(aggregatedForecastData, {
+            mergeDays: false,
+            mergePeriods: false
+        })
+
         // Temperature
         const filteredReports = formattedForecastData.filter(report => {
             const meanTemperature = (report.temperatures.min + report.temperatures.max) / 2
@@ -40,7 +47,7 @@ module.exports = async function (msg, flow) {
         })
         if(filteredReports.length === 0) {
             speech += translation.conditionToSpeech(conditionName, 'no', place)
-            speech += translation.temperatureToSpeech(formattedForecastData)
+            speech += translation.temperatureToSpeech(formattedTemperatureData)
         } else {
             speech += translation.conditionToSpeech(conditionName, 'yes', place)
             speech += translation.temperatureToSpeech(filteredReports)

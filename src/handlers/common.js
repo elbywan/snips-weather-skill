@@ -61,6 +61,7 @@ module.exports = async function (msg, { mergeFormattedData = false } = {}) {
 
     return {
         place: countryName ? place + ' ' + countryName : place,
+        aggregatedForecastData,
         formattedForecastData
     }
 }

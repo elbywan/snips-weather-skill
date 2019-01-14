@@ -40,7 +40,7 @@
                 "range": [
                     "avec des températures comprises entre {{ minTemp }} et {{ maxTemp }} degrés",
                     "et les températures seront comprises entre {{ minTemp }} et {{ maxTemp }} degrés",
-                    "avec des températures entre {{ minTemp }} to {{ maxTemp }} degrés",
+                    "avec des températures entre {{ minTemp }} et {{ maxTemp }} degrés",
                     "et il fera entre {{ minTemp }} et {{ maxTemp }} degrés"
                 ],
                 "exact": [
@@ -50,7 +50,7 @@
                 ]
             },
             "day": "{{- time }} {{- predictions }} {{- temperatures }}.",
-            "day_place": "In {{ place }} {{- time }} {{- predictions }} {{- temperatures }}."
+            "day_place": "{{ place }} {{- time }} {{- predictions }} {{- temperatures }}."
         },
         "temperatures": {
             "temperatures": {

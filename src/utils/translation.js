@@ -60,7 +60,7 @@ module.exports = {
                 time = joinTerms(day.days.map(day => i18n('days.' + day)))
             } else {
                 if(!sameDay && !day.customLabel)
-                    time = day.days[0] + ', '
+                    time = i18n('days.' + day.days[0]) + ', '
                 time += joinTerms(Array.from(day.labels).map(label => i18n('partOfDay.' + label, label || '')))
             }
 
@@ -113,7 +113,7 @@ module.exports = {
                 time = joinTerms(day.days.map(day => i18n('days.' + day)))
             } else {
                 if(!sameDay && !day.customLabel)
-                    time = day.days[0] + ', '
+                    time = i18n('days.' + day.days[0]) + ', '
                 time += joinTerms(Array.from(day.labels).map(label => i18n('partOfDay.' + label, label || '')))
             }
 

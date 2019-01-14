@@ -14,15 +14,15 @@ withHermes(async (hermes, done) => {
         // Subscribe to the app intents
         dialog.flows([
             {
-                intent: 'davidsnips:WeatherForecast',
+                intent: 'snips-assistant:WeatherForecast',
                 action : handlers.weatherForecast
             },
             {
-                intent: 'davidsnips:TemperatureForecast',
+                intent: 'snips-assistant:TemperatureForecast',
                 action: handlers.temperatureForecast
             },
             {
-                intent: 'davidsnips:WeatherConditionRequest',
+                intent: 'snips-assistant:WeatherConditionRequest',
                 action: handlers.weatherCondition
             }
         ])
