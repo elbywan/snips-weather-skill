@@ -150,7 +150,7 @@
         "saturday": "samedi",
         "sunday": "dimanche",
         "yesterday": "hier",
-        "today": "aujoud'hui",
+        "today": "aujourd'hui",
         "tomorrow": "demain"
     },
     "quantifier": {

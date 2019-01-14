@@ -38,7 +38,7 @@ module.exports = async function (msg, flow) {
         })
 
         // Temperature
-        const filteredReports = formattedForecastData.filter(report => {
+        const filteredReports = formattedTemperatureData.filter(report => {
             const meanTemperature = (report.temperatures.min + report.temperatures.max) / 2
             const threshold = TEMPERATURE_TRESHOLDS[conditionName]
             return conditionName === 'cold' ?
