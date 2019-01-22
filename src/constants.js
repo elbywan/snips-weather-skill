@@ -33,12 +33,15 @@ module.exports = {
             chaud: 'warm',
             neige: 'snow',
             pluie: 'rain'
+            // TODO (after it is ported in the french app)
         },
         en: {
             cold: 'cold',
             warm: 'warm',
             snow: 'snow',
-            rain: 'rain'
+            rain: 'rain',
+            clear: 'sun',
+            cloudy: 'clouds'
         }
     },
     TEMPERATURE_TRESHOLDS: {

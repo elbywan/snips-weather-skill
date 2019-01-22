@@ -101,6 +101,22 @@
                     "Effectivement, il y aura des températures relativement hautes sur {{ place }}.",
                     "Oui, sur {{ place }} il fera chaud.",
                     "Sur {{ place }}, on attend des températures relativement hautes."
+                ],
+                "clouds": [
+                    "Oui, il y aura des nuages sur {{ place }}.",
+                    "Oui, il est prévu qu'il y ait des nuages sur {{ place }}.",
+                    "Oui, sur {{ place }} le temps sera nuageux.",
+                    "Effectivement, il y aura des nuages sur {{ place }}.",
+                    "Il y aura bien des nuages sur {{ place }}.",
+                    "Sur {{ place }}, on prévoit bien un ciel nuageux."
+                ],
+                "sun": [
+                    "Oui, il va faire un grand soleil sur {{ place }}.",
+                    "Oui, il est prévu qu'il y ait du soleil sur {{ place }}.",
+                    "Oui, sur {{ place }} le temps sera ensoleillé.",
+                    "Effectivement, il y aura du soleil sur {{ place }}.",
+                    "Il y aura bien un ciel dégagé sur {{ place }}.",
+                    "Oui. Sur {{ place }}, on prévoit un grand ciel bleu."
                 ]
             },
             "no": {
@@ -130,6 +146,22 @@
                     "Non, il n'est pas prévu qu'il fasse chaud sur {{ place }}.",
                     "Non, sur {{ place }} le temps ne sera pas chaud.",
                     "Sur {{ place }}, il n'est pas prévu qu'il fasse chaud."
+                ],
+                "clouds": [
+                    "Non, il n'y aura pas de nuages sur {{ place }}.",
+                    "Non, il n'est pas prévu qu'il fasse nuageux sur {{ place }}.",
+                    "Non, sur {{ place }} le temps ne sera pas nuageux.",
+                    "Non, il n'y aura pas de nuages sur {{ place }}.",
+                    "Non, il n'y aura pas de nuages sur {{ place }}.",
+                    "Sur {{ place }}, aucun nuage n'est prévu à l'horizon."
+                ],
+                "sun": [
+                    "Non, il n'y aura pas un grand soleil sur {{ place }}.",
+                    "Non, il n'est pas prévu qu'il y ait du soleil sur {{ place }}.",
+                    "Non, sur {{ place }} le temps ne sera pas ensoleillé.",
+                    "Non, le ciel ne sera pas dégagé sur {{ place }}.",
+                    "Non, il y aura des nuages sur {{ place }}.",
+                    "Sur {{ place }}, il n'est pas prévu que le ciel soit dégagé."
                 ]
             }
         }

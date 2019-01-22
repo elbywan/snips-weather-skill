@@ -53,7 +53,7 @@ module.exports = async function (msg, flow) {
             speech += translation.temperatureToSpeech(filteredReports)
         }
     } else {
-        // Temperature
+        // Weather types
         const filteredReports = formattedForecastData.filter(report => (
             report.report.type === conditionName
         ))

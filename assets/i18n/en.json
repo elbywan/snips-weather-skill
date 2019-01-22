@@ -91,6 +91,18 @@
                     "Yes, it is going to be warm in {{ place }}.",
                     "Yes, the temperature will be high in {{ place }}.",
                     "Yes, the temperature is going to be high in {{ place }}."
+                ],
+                "clouds": [
+                    "Yes, it is expected to be cloudy in {{ place }}.",
+                    "Yes, it is going to be cloudy in {{ place }}.",
+                    "Yes, the weather will be cloudy in {{ place }}.",
+                    "Yes, clouds is expected in {{ place }}."
+                ],
+                "sun": [
+                    "Yes, it is expected to be sunny in {{ place }}.",
+                    "Yes, it is going to be sunny in {{ place }}.",
+                    "Yes, the weather will be sunny in {{ place }}.",
+                    "Yes, sun is expected in {{ place }}."
                 ]
             },
             "no": {
@@ -115,6 +127,18 @@
                     "No, it is not expected to be warm in {{ place }}.",
                     "No, it is not going to be warm in {{ place }}.",
                     "No, the weather will not be warm in {{ place }}."
+                ],
+                "clouds": [
+                    "No, it is not expected to be cloudy in {{ place }}.",
+                    "No, it is not going to be cloudy in {{ place }}.",
+                    "No, the weather will not be cloudy in {{ place }}.",
+                    "No, clouds are not expected in {{ place }}."
+                ],
+                "sun": [
+                    "No, it is not expected to be sunny in {{ place }}.",
+                    "No, it is not going to be sunny in {{ place }}.",
+                    "No, the weather will not be sunny in {{ place }}.",
+                    "No, sun is not expected in {{ place }}."
                 ]
             }
         }
