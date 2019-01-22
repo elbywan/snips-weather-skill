@@ -36,7 +36,7 @@
             },
             "temperatures": {
                 "range": [
-                    "with a high of {{ minTemp }} and a low of {{ maxTemp }} degrees",
+                    "with a high of {{ maxTemp }} and a low of {{ minTemp }} degrees",
                     "with temperatures ranging between {{ minTemp }} and {{ maxTemp }} degrees",
                     "with temperatures between {{ minTemp }} to {{ maxTemp }} degrees",
                     "and temperatures will be ranging between {{ minTemp }} and {{ maxTemp }} degrees"
@@ -53,7 +53,7 @@
         "temperatures": {
             "temperatures": {
                 "range": [
-                    "there will be a high of {{ minTemp }} and a low of {{ maxTemp }} degrees",
+                    "there will be a high of {{ maxTemp }} and a low of {{ minTemp }} degrees",
                     "the temperatures will be ranging between {{ minTemp }} and {{ maxTemp }} degrees",
                     "the temperatures will range between {{ minTemp }} to {{ maxTemp }} degrees"
                 ],
