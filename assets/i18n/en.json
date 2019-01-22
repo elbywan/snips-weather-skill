@@ -78,7 +78,7 @@
                     "Yes, it is expected to snow in {{ place }}.",
                     "Yes, it is going to be snowy in {{ place }}.",
                     "Yes, the weather will be snowy in {{ place }}.",
-                    "Yes, snow in expected in {{ place }}."
+                    "Yes, snow is expected in {{ place }}."
                 ],
                 "cold": [
                     "Yes, it is expected to be cold in {{ place }}.",
