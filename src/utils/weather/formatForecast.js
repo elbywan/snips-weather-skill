@@ -149,7 +149,7 @@ module.exports = {
                 if(!dayPart)
                     return
 
-                const dayPartIsNow = dayPart.startTime <= (Date.now() + FORECAST_PERIOD)
+                const singleDayPart = datum.day.iterations === 1
 
                 if(dayReport.labels.size > 0 && dayReport.report !== null) {
                     // Check previous report and merge if possible
@@ -167,7 +167,7 @@ module.exports = {
                         resetReport()
                     }
                 }
-                if(dayPart.iterations === 1 && dayPart.timeInterval.raw_value && !dayPartIsNow) {
+                if(dayPart.iterations === 1 && dayPart.timeInterval.raw_value && singleDayPart) {
                     dayReport.labels.add(dayPart.timeInterval.raw_value)
                     dayReport.customLabel = true
                 } else {

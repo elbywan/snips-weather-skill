@@ -29,9 +29,9 @@ module.exports = {
         return date.getTime() >= interval.min && date.getTime() <= interval.max
     },
     extractTimeInterval: timeSlots => {
-        const result = module.exports.extractTimeIntervals(timeSlots)
+        const [result, truncated]  = module.exports.extractTimeIntervals(timeSlots)
         if(result && result.length > 0)
-            return result[0]
+            return [result[0], truncated]
         return null
     },
     extractTimeIntervals: timeSlots => {
@@ -52,6 +52,7 @@ module.exports = {
         }
 
         let intervals = []
+        let truncated = false
 
         timeSlots.forEach(timeSlot => {
             const { value, raw_value } = timeSlot
@@ -69,12 +70,14 @@ module.exports = {
 
                 const instantTime = new Date(slotValue.value).getTime()
 
-                if(instantTime < today.getTime() || grain < 4)
-                    throw new Error('intersection')
+                // if(instantTime < today.getTime() || grain < 3)
+                //     throw new Error('intersection')
 
                 // Set the interval based on the grain and precision
                 intervalValue.from = instantTime
                 intervalValue.to =
+                    grain === 3 ?
+                        instantTime + DAY_MILLISECONDS * 7 * precision :
                     grain === 4 ?
                         instantTime + DAY_MILLISECONDS * precision :
                     grain === 5 ?
@@ -89,7 +92,8 @@ module.exports = {
 
             // If the interval is out of the supported range
             if(intervalValue.from < limits.min || intervalValue.to > limits.max)
-                throw new Error('intersection')
+                // throw new Error('intersection')
+                truncated = true
 
             if(!intervals.length) {
                 intervals.push({ from: intervalValue.from, to: intervalValue.to, raw_value })
@@ -114,6 +118,6 @@ module.exports = {
         // Sort in ascending order
         intervals.sort((i1, i2) => i1.from - i2.from)
 
-        return intervals
+        return [intervals, truncated]
     }
 }

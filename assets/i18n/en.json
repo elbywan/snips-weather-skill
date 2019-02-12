@@ -18,6 +18,9 @@
         "localisation": "Sorry, this localisation is not supported.",
         "unspecific": "Oops, something went wrong."
     },
+    "warning": {
+        "truncatedIntervals": "Sorry, I can only predict the weather within five days from now."
+    },
     "forecast": {
         "weather": {
             "prediction": {

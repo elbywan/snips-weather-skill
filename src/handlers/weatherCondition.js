@@ -27,10 +27,11 @@ module.exports = async function (msg, flow) {
     const {
         place,
         aggregatedForecastData,
-        formattedForecastData
+        formattedForecastData,
+        intervalsAreTruncated
     } = await commonHandler(msg, { mergeFormattedData: true })
 
-    let speech = ''
+    let speech = translation.warnAboutTruncatedIntervals(intervalsAreTruncated) + ' '
     if(conditionName === 'cold' || conditionName === 'warm') {
         const formattedTemperatureData = weather.formatForecast(aggregatedForecastData, {
             mergeDays: false,

@@ -18,6 +18,9 @@
         "localisation": "Désolé, cette langue n'est pas supportée.",
         "unspecific": "Oups, quelque chose s'est mal passé."
     },
+    "warning": {
+        "truncatedIntervals": "Désolé, je ne peux prédire la méteo que pour les cinq prochains jours."
+    },
     "forecast": {
         "weather": {
             "prediction": {

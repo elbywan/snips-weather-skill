@@ -22,7 +22,7 @@ module.exports = async function (msg, { mergeFormattedData = false } = {}) {
     const citySlot = message.getSlotsByName(msg, 'city', { onlyMostConfident: true })
 
     /* Merge time slot values into time intervals */
-    const timeIntervals = time.extractTimeIntervals(timeSlots)
+    const [timeIntervals, intervalsAreTruncated] = time.extractTimeIntervals(timeSlots)
 
     /* Extract target geonameid and name */
     const { geonameid: geoNameId, value: place, countryName } = location.extractGeoNameIdAndPlace(countrySlot, regionSlot, citySlot)
@@ -62,6 +62,7 @@ module.exports = async function (msg, { mergeFormattedData = false } = {}) {
     return {
         place: countryName ? place + ' ' + countryName : place,
         aggregatedForecastData,
-        formattedForecastData
+        formattedForecastData,
+        intervalsAreTruncated
     }
 }

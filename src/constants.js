@@ -8,8 +8,8 @@ module.exports = {
     },
     HOUR_MILLISECONDS: 1000 * 60 * 60,
     DAY_MILLISECONDS: 1000 * 60 * 60 * 24,
-    // 5 days
-    FORECAST_DAYS_LIMIT: 1000 * 60 * 60 * 24 * 5,
+    // 7 days
+    FORECAST_DAYS_LIMIT: 1000 * 60 * 60 * 24 * 7,
     // Forecast granularity - 3 hours
     FORECAST_PERIOD: 1000 * 60 * 60 * 3,
     DAY_LIST: [

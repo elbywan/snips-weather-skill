@@ -143,5 +143,9 @@ module.exports = {
     conditionToSpeech (name, condition, place) {
         const randomTranslation = module.exports.randomTranslation
         return randomTranslation(`forecast.conditional.${condition}.${name}`, { place }) + '\n'
+    },
+    warnAboutTruncatedIntervals(isTruncated) {
+        const i18n = i18nFactory.get()
+        return isTruncated ? i18n('warning.truncatedIntervals') : ''
     }
 }
