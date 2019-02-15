@@ -5,13 +5,13 @@ const {
     weather,
     logger
 } = require('../utils')
-const { INTENT_PROBABILITY_THRESHOLD } = require('../constants')
+const { INTENT_THRESHOLD, ASR_THRESHOLD } = require('../constants')
 const { getForecast } = require('../openWeatherClient')
 
 /* Common logic performed for various intents */
 module.exports = async function (msg, { mergeFormattedData = false } = {}) {
 
-    if(msg.intent.probability < INTENT_PROBABILITY_THRESHOLD) {
+    if(msg.intent.probability < INTENT_THRESHOLD || message.getAsrConfidence(msg) < ASR_THRESHOLD) {
         throw new Error('intentNotRecognized')
     }
 

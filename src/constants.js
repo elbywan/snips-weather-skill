@@ -21,7 +21,10 @@ module.exports = {
         'friday',
         'saturday'
     ],
-    INTENT_PROBABILITY_THRESHOLD: 0.5,
+    SLOT_THRESHOLD: 0,
+    ASR_THRESHOLD: 0.5,
+    INTENT_THRESHOLD: 0.5,
+    INTENT_FILTER_THRESHOLD: 0,
     MIN_THRESHOLDS: {
         rain: 0.1,
         snow: 0.05,
