@@ -40,10 +40,10 @@ module.exports = {
 
         // No time slots specified, use the current day
         if(timeSlots.length < 1) {
-            return [{
+            return [[{
                 from: today.getTime(),
                 to: today.getTime() + DAY_MILLISECONDS
-            }]
+            }], false]
         }
 
         const limits = {
