@@ -16,13 +16,17 @@ module.exports = async function (msg, flow) {
 
     const config = configFactory.get()
     const language = LANGUAGE_MAPPINGS[config.locale]
-    const conditionRawName = message.getSlotsByName(msg, 'condition_name', { onlyMostConfident: true })
+    const conditionSlot = message.getSlotsByName(msg, 'condition_name', { onlyMostConfident: true })
 
-    if(!conditionRawName) {
+    if(!conditionSlot) {
         throw new Error('intentNotRecognized')
     }
 
-    const conditionName = CONDITIONS_MAPPINGS[language][conditionRawName.value.value]
+    const conditionName = CONDITIONS_MAPPINGS[language][conditionSlot.value.value]
+
+    if(!conditionName) {
+        throw new Error('intentNotRecognized')
+    }
 
     const {
         place,
